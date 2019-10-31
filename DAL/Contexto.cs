@@ -6,16 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidades;
 
+
 namespace DAL
 {
     public class Contexto : DbContext
     {
 
 
-        //public DbSet<Pagos> Pagos { get; set; }
+        public DbSet<Clientes> Clientes { get; set; }
 
 
-
+        public DbSet<Transacciones> Transacciones { get; set; }
         public Contexto() : base("ConStr")
         { }
 
